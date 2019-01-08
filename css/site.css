@@ -1,5 +1,12 @@
 
+@font-face {
+  font-family: 'universedisplay';
+  src: url('universe-webfont.woff2') format('woff2'),
+       url('universe-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
+}
 
 
 body {
@@ -54,10 +61,12 @@ body {
    
 }
 .secondgrid-photo img{
-   
-   opacity: 0.6;
+   position: absolute;
+   left:0px;
+   opacity: 0.7;
  	display: block;
- max-width:47%;
+ max-width:50%;
+
  position: absolute;
  
 }
@@ -97,7 +106,7 @@ body {
  
   color:  #00245D;
     text-decoration: none;
-   font-family: 'Oswald', sans-serif;
+    font-family: 'universedisplay',sans-serif;  
    font-size: 18px;
 }
 
@@ -118,7 +127,7 @@ body {
     
  
     color: white;
-   font-family: 'glacial_indifferenceregular', sans-serif;
+   font-family: 'universedisplay',sans-serif;
 }
 
 .home-text ul li{
@@ -126,21 +135,28 @@ body {
 }
 
 .home-text p{
-  margin-left: 185px;
+ 
+  font-family: 'Rajdhani', sans-serif;
+  word-spacing: 2.5px;
+
 	  width: 600px;
    text-align: justify;
-  margin-top: : 15px;
+  margin-top:  25px;
   font-size: 16px;
 }
 
-.home-text h3{
+.home-text h1{
   color: WHITE;
-  margin-left: 185px;
+  position: relative;
+  
+  letter-spacing: 15px;
+  font-size: 45px;
 }
+
 
 .social-icon{
   margin-bottom: 30px;
-  margin-left: 175px;
+  margin-left: 50px;
 }
 .fa-stack{
   color: #00245D;
@@ -149,42 +165,166 @@ body {
   color:white ;
 }
 
-#spin {
-  margin-left: 185px;
-   color: white;
-  font-family: 'Montserrat', sans-serif;
-}
-#spin:after {
-  content:"";
-  animation: spin 15s linear infinite;
-}
-@keyframes spin {
-  0% { content:"Hello!"; }
-  10% { content:"Kumusta!"; }
-  20% { content:"你好!"; }
-  30% { content:"Hello!"; }
-  40% { content:"Kumusta!"; }
-  50% { content:"你好!"; }
-  60% { content:"Hello!"; }
-  70% { content:"Kumusta!"; }
-  80% { content:"你好!"; }
-  90% { content:"Hello!"; }
-  100% { content:"Kumusta!"; }
+
+
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/* Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { ... }
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... }
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { ... }
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
 
 
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__item {
+  display: inline-block;
+  margin: 0 10px;
+}
+.pagination__link {
+  margin-top: 15px;
+  position: relative;
+  text-indent: -99em;
+  overflow: hiddin;
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+.pagination__link:before, .pagination__link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.pagination__link:before {
+  background: #ecf0f1;
+  transform: scale(0.2);
+}
+.pagination__link:hover:after {
+  transform: scale(1.1);
+}
+.pagination__link.is_active:before {
+  transform: scale(0.5);
+}
+.pagination__link.is_active:after {
+  transform: scale(0.2);
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+ 
+ margin-top: 180px;
+  text-align: right;
+  font-family: 'universedisplay',sans-serif;
+  position: absolute; /* Position them relative to the browser window */
+  right: 20px; /* Position them outside of the screen */
+
+
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+ 
+}
+
+
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+ 
+}
+
+#blog {
+  top: 80px;
+  
+}
+
+#projects {
+  top: 140px;
+  
+}
+
+#contact {
+  top: 200px;
+
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(5px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .side-nav{
+    display: block;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .side-nav{
+    display: none;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .side-nav{
+    display: none;
+  }
+  
+}
