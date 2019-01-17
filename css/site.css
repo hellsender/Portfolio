@@ -10,9 +10,10 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
-    
+    margin:auto;
+    padding: auto;
+    overflow-y:hidden;
+   background-color: black;
 
 }
 
@@ -20,23 +21,22 @@ body {
 .container-fluid{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    height: 100vh;
-
+  overflow: hidden;
+ 
 }
 
 .col-md-2{
   background-color: black;
-  
 }
 
 .row{
-    height: 100%;
+    height: auto;
     width: auto;
 }
 
-.side-nav{
-  
+.side-nav img{
+  width: 62%;
+  height: auto;
 }
 
 
@@ -44,7 +44,8 @@ body {
   position: relative;
   padding: 0; 
   margin:0; 
-  background-color: #000000;
+
+  display: inline-block;
 
 }
 
@@ -56,17 +57,15 @@ body {
     padding: 0;
     margin-left: 20px;
     color: white;
-     position: absolute;
-   
-   
+
 }
 .secondgrid-photo img{
-   position: absolute;
+  height: 100%;
    left:0px;
-   opacity: 0.7;
+   opacity: 0.29;
  	display: block;
- max-width:50%;
 
+overflow: hidden;
  position: absolute;
  
 }
@@ -78,7 +77,7 @@ body {
 
 
 .col-md-1{
- 
+  
   background-color: black;
 }
 
@@ -110,22 +109,13 @@ body {
    font-size: 18px;
 }
 
-.horizontal-list ul li a:hover{
-  color: white;
-}
 
-.dot {
-    margin-left: 5px;
-    height: 6px;
-    width: 6px;
-    background-color: pink;
-    border-radius: 50%;
-    display: inline-block;
-}
+
+
 
 .home-text{
     
- 
+  position: relative;
     color: white;
    font-family: 'universedisplay',sans-serif;
 }
@@ -139,7 +129,7 @@ body {
   font-family: 'Rajdhani', sans-serif;
   word-spacing: 2.5px;
 
-	  width: 600px;
+	  width: 650px;
    text-align: justify;
   margin-top:  25px;
   font-size: 16px;
@@ -150,79 +140,29 @@ body {
   position: relative;
   
   letter-spacing: 15px;
-  font-size: 45px;
+  font-size: 60px;
 }
+
+.home-text h3{
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
 
 
 .social-icon{
-  margin-bottom: 30px;
-  margin-left: 50px;
+  text-align: center;
+  
 }
 .fa-stack{
-  color: #00245D;
+  color: black;
 }
 .fa fa-twitter fa-stack-1x fa-inverse {
-  color:white ;
+  color:white;
 }
 
 
 
-
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-
-
-a {
-  text-decoration: none;
-}
-
-.wrapper {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pagination__item {
-  display: inline-block;
-  margin: 0 10px;
-}
-.pagination__link {
-  margin-top: 15px;
-  position: relative;
-  text-indent: -99em;
-  overflow: hiddin;
-  display: block;
-  width: 15px;
-  height: 15px;
-}
-.pagination__link:before, .pagination__link:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  
-  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.pagination__link:before {
-  background: #ecf0f1;
-  transform: scale(0.2);
-}
-.pagination__link:hover:after {
-  transform: scale(1.1);
-}
-.pagination__link.is_active:before {
-  transform: scale(0.5);
-}
-.pagination__link.is_active:after {
-  transform: scale(0.2);
-}
 
 /* Style the links inside the sidenav */
 #mySidenav a {
@@ -293,28 +233,140 @@ a {
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
   right: 0;
 }
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+.snip1529 {
+  background-color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 10px;
+  max-width: 225px;
   
-  .side-nav{
-    display: block;
+ 
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: 250px;
+}
+
+.snip1529 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1529 img {
+  
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+  opacity: 0.45;
+}
+
+.snip1529 figcaption {
+  padding: 25px 20px 25px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+
+.snip1529 h3,
+.snip1529 p {
+  margin: 0;
+  padding: 0;
+}
+
+.snip1529 h3 {
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+.snip1529 .hover {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: #2098D1;
+  display: flex;
+  font-size: 65px;
+  justify-content: center;
+  opacity: 0;
+}
+
+.snip1529 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.snip1529:hover .hover,
+.snip1529.hover .hover {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.snip1529:hover figcaption,
+.snip1529.hover figcaption {
+  opacity: 0;
+}
+
+
+
+/* Demo purposes only */
+
+
+@media (min-width: 1281px) {
+  
+ 
+  
+  .about_mobile{
+    display:none;
+  }
+  .portfolio_mobile{
+    display:none;
+  }
+
+  .contactme_mobile{
+    display:none;
   }
   
 }
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
   .side-nav{
     display: none;
   }
   
+  .about_mobile{
+    display:none;
+  }
+  .portfolio_mobile{
+    display:none;
+  }
+
+  .contactme_mobile{
+    display:none;
+  }
 }
+
+
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -322,9 +374,204 @@ a {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
+
+
+
+
+
+  .home-text{
+    padding-top:35px;
+    margin-left: 10px;
+  }
   .side-nav{
     display: none;
   }
+
+  .secondgrid-photo img{
+    display:none;
+  }
+  .home-text p{
+ 
+    font-family: 'Rajdhani', sans-serif;
+    word-spacing: 2.5px;
+    margin-left: 25px;
+ 
+    width: 85%;
+    
+     text-align: justify;
+
+    font-size: 14.5px;
+    padding-bottom: 150px;
+  }
+
+  .home-text h3{
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  .home-text h1{
+    color: WHITE;
+    position: relative;
+    margin-left: 25px;
+ 
+    width: 85%;
+    letter-spacing: 15px;
+    font-size: 45px;
+  }
+  
+  .home-text h3{
+    margin-left: 25px;
+ 
+    width: 85%;
+    font-family: 'Rajdhani', sans-serif;
+  
+  }
+
+  Body{
+    display: block;
+  }
+
+  .portfolio_mobile{
+    overflow: hidden;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  .portfolio_mobile h1{
+    text-align: center;
+    color: black;
+    font-family: 'universedisplay',sans-serif; 
+
+    word-spacing: 2.5px;
+    margin-left: 35px;
+  
+    width: 85%;
+    
+     text-align: justify;
+  
+    font-size: 35px;
+    margin-bottom: -2.5px;
+    
+  }
+  .portfolio_mobile h3{ 
+    text-align: center;
+    color: black;
+    word-spacing: 2.5px;
+    margin-left: 35px;
+  
+    width: 85%;
+    
+     text-align: justify;
+  
+
+  }
+
+
+  .portfolio_mobile img{
+    display: block;
+   width: 85%;
+   margin: auto;
+  }
+
+.portfolio_mobile p{
+  text-align: center;
+  color: black;
+  word-spacing: 2.5px;
+  margin-left: 35px;
+
+  width: 85%;
+  
+   text-align: justify;
+}
+
+.portfolio_caption h1{
+  font-family: 'Rajdhani', sans-serif;
+  position: relative;
+  margin-bottom: -20px;
+}
+
+.portfolio_caption p{
+  font-family: 'Rajdhani', sans-serif;
+  word-spacing: 2.5px;
+  text-align: justify;
+  padding-bottom: 15px;
+}
+
+
+.portfolio_caption h3{
+  font-family: 'Rajdhani', sans-serif;
+  position: relative;
+  margin-bottom: -10px;
+  color: #00245D;
   
 }
+  .col-md-1{
+    display: none;
+  }
+  
+.about_mobile{
+  color: white;
+}
+
+
+
+.about_mobile h1{
+  font-family: 'universedisplay',sans-serif;
+  
+  margin-left: 35px;
+  width: 85%;
+  position: relative;
+}
+
+
+
+.about_mobile h3{
+  font-family: 'Rajdhani', sans-serif;
+  word-spacing: 2.5px;
+    margin-left: 20px;
+ 
+    width: 90%;
+    
+     text-align: center;
+
+    font-size: 13px;
+    margin-bottom: -1.5px;
+}
+
+.social-icon{
+  text-align: center;
+  
+}
+.fa-stack{
+  color: black;
+}
+.fa fa-twitter fa-stack-1x fa-inverse {
+  color:white;
+}
+}
+
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
