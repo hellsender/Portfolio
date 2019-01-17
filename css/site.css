@@ -376,7 +376,20 @@ overflow: hidden;
 @media (min-width: 320px) and (max-width: 480px) {
 
 
+  body{
+    margin:auto;
+    padding: auto;
+   background-color: black;
 
+  }
+
+  
+.container-fluid{
+  margin: 0;
+  padding: 0;
+
+
+}
 
 
   .home-text{
@@ -480,7 +493,7 @@ overflow: hidden;
   width: 85%;
   
    text-align: justify;
-}
+  }
 
 .portfolio_caption h1{
   font-family: 'Rajdhani', sans-serif;
@@ -547,6 +560,7 @@ overflow: hidden;
   color:white;
 }
 }
+
 
 
 
