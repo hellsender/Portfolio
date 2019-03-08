@@ -375,7 +375,7 @@ overflow: hidden;
     margin:auto;
     padding: auto;
    background-color: black;
-
+overflow-y:auto;
   }
 
   
@@ -436,6 +436,7 @@ overflow: hidden;
 
   Body{
     display: block;
+	  overflow-y:auto;
   }
 
   .portfolio_mobile{
